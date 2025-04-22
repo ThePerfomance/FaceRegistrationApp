@@ -1,4 +1,4 @@
-package com.example.faceapp
+package com.example.faceapp.activity
 
 import android.Manifest
 import android.content.Intent
@@ -6,11 +6,7 @@ import android.content.pm.PackageManager
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Color
-import android.graphics.Paint
 import android.graphics.Path
-import android.graphics.PorterDuff
-import android.graphics.PorterDuffXfermode
-import android.graphics.RectF
 import android.net.Uri
 import android.os.Bundle
 import android.provider.MediaStore
@@ -24,8 +20,6 @@ import androidx.camera.core.ImageCaptureException
 import androidx.camera.core.Preview
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.content.ContextCompat
-import com.example.faceapp.RetrofitInstance
-import com.example.faceapp.UploadResponse
 import com.example.faceapp.databinding.ActivityCameraBinding
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
@@ -33,12 +27,13 @@ import okhttp3.RequestBody.Companion.asRequestBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
-import java.io.ByteArrayOutputStream
 import java.io.File
 import java.io.FileOutputStream
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 import androidx.core.graphics.createBitmap
+import com.example.faceapp.api.RetrofitInstance
+import com.example.faceapp.classes.UploadResponse
 
 class CameraActivity : AppCompatActivity() {
 

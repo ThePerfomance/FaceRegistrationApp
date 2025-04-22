@@ -1,4 +1,4 @@
-package com.example.faceapp
+package com.example.faceapp.views
 
 import android.content.Context
 import android.graphics.Canvas
@@ -11,6 +11,7 @@ import android.util.AttributeSet
 import android.view.View
 import androidx.core.content.withStyledAttributes
 import androidx.core.graphics.toColorInt
+import com.example.faceapp.R
 
 class OvalOverlayView @JvmOverloads constructor(
     context: Context,

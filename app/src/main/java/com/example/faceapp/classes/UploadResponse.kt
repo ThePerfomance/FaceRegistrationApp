@@ -1,4 +1,4 @@
-package com.example.faceapp
+package com.example.faceapp.classes
 
 data class UploadResponse(
     val status: String,

@@ -1,4 +1,4 @@
-package com.example.faceapp
+package com.example.faceapp.activity
 
 import android.content.Intent
 import android.os.Bundle
