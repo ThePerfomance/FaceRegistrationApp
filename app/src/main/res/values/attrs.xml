@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="OvalOverlayView">
+        <attr name="backgroundColor" format="color" />
+        <attr name="ovalColor" format="color" />
+        <attr name="ovalWidth" format="dimension" />
+        <attr name="ovalHeight" format="dimension" />
+    </declare-styleable>
+</resources>
