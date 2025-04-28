@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
@@ -9,14 +10,23 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <!-- Овальное оверлей -->
-    <com.example.faceapp.OvalOverlayView
+    <!-- Овальный оверлей -->
+    <com.example.faceapp.views.OvalOverlayView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:backgroundColor="#B0000000"
         app:ovalWidth="300dp"
         app:ovalHeight="400dp" />
 
+    <!-- ProgressBar для индикации загрузки -->
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+    <!-- Кнопка "Сделать фото" -->
     <Button
         android:id="@+id/cameraCaptureButton"
         android:layout_width="wrap_content"

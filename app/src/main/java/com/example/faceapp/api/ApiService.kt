@@ -9,6 +9,6 @@ import retrofit2.http.Part
 
 interface ApiService {
     @Multipart
-    @POST("upload")
+    @POST("auth/face/")
     fun uploadImage(@Part file: MultipartBody.Part): Call<UploadResponse>
 }

@@ -8,8 +8,11 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
 object RetrofitInstance {
-    private const val BASE_URL = "https://yourserver.com/api/" // Замените на ваш URL
+    ////
 
+    private const val BASE_URL = "https://asdera649-faceident-7597.twc1.net/"
+
+    ////
     private val moshi = Moshi.Builder()
         .add(KotlinJsonAdapterFactory())
         .build()
